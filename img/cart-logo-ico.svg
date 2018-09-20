@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.971 110.464">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2e2e2e;
+      }
+    </style>
+  </defs>
+  <g id="Group_1305" data-name="Group 1305" transform="translate(-984 -448.659)">
+    <g id="image_large" transform="translate(984 448.659)">
+      <g id="MSP_Bag_Empty" transform="translate(0 19.494)">
+        <path id="Path_1" data-name="Path 1" class="cls-1" d="M9.747,16A9.734,9.734,0,0,0,0,25.747V97.224a9.734,9.734,0,0,0,9.747,9.747H81.224a9.734,9.734,0,0,0,9.747-9.747V25.747A9.734,9.734,0,0,0,81.224,16ZM84.473,97.224a3.217,3.217,0,0,1-3.249,3.249H9.747A3.217,3.217,0,0,1,6.5,97.224V25.747A3.217,3.217,0,0,1,9.747,22.5H81.224a3.217,3.217,0,0,1,3.249,3.249Z" transform="translate(0 -16)"/>
+      </g>
+      <g id="Group_1" data-name="Group 1" transform="translate(21.118)">
+        <path id="Path_2" data-name="Path 2" class="cls-1" d="M51.984,38.992H3.25V35.743C3.25,21.707,15.921,13,27.617,13s24.367,8.707,24.367,22.743Zm-41.912-6.5H45.162c-1.754-8.122-9.877-13-17.544-13S11.827,24.371,10.073,32.494Z" transform="translate(-3.25 -13)"/>
+      </g>
+    </g>
+    <g id="Group_1304" data-name="Group 1304" transform="translate(1014 493.337)">
+      <path id="Path_379" data-name="Path 379" class="cls-1" d="M10.317,37.7A10.323,10.323,0,0,1,0,27.379v-12a15.376,15.376,0,1,1,20.344,14.56A10.282,10.282,0,0,1,10.317,37.7ZM15.376,5.929a9.464,9.464,0,0,0-9.447,9.447v12a4.389,4.389,0,0,0,8.776.109l.054-2.393,2.357-.435a9.448,9.448,0,0,0-1.741-18.73Z" transform="translate(0 0)"/>
+    </g>
+  </g>
+</svg>

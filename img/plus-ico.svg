@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #2e2e2e;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Group_1013" data-name="Group 1013" transform="translate(-781.5 -3812.5)">
+    <line id="Line_15" data-name="Line 15" class="cls-1" y2="22" transform="translate(792.5 3812.5)"/>
+    <line id="Line_246" data-name="Line 246" class="cls-1" y2="22" transform="translate(803.5 3823.5) rotate(90)"/>
+  </g>
+</svg>

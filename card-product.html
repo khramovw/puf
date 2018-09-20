@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pufok</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Awesome-->
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!--Custom style-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--HEADER START-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="sidebar-btn mr-5">
+            <img src="img/menu-ico.svg" alt="button">
+        </button>
+        <a class="navbar-brand ml-5" href="#">
+            <img src="img/logo.svg" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nserviceNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nserviceNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/home">Главная <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Каталог</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Сервис
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Ремонт</a>
+                        <a class="dropdown-item" href="#">Брендирование</a>
+                        <a class="dropdown-item" href="#">Замена чехлов</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Акции</a>
+                </li>
+                <li class="nav-item contact-item dropdown d-flex align-items-center">
+                    <img src="img/tel-ico.svg" alt="">
+                    <a class="nav-link dropdown-toggle" href="#" id="contactDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        +38 (063) 804 02 70
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="contactDropdownMenuLink">
+                        <a class="dropdown-item" href="tel:+38 (063) 804 02 70">+38 (063) 804 02 70</a>
+                        <a class="dropdown-item" href="tel:+38 (067) 779 98 28">+38 (067) 779 98 28</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button type="button"  data-toggle="modal" data-target="#cartModal" class="cart-btn mr-5">
+                        <img src="img/cart-ico.svg" alt="cart">
+                        <span class="badge">1</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!--HEADER END-->
+
+<!--MAIN START-->
+    <main>
+
+        <!--CARD-PRODUCT START-->
+        <section class="card-product">
+            <div class="card-product-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">SLIDER</div>
+                        <div class="col-12 col-lg-6">
+                            <div class="right-wrap">
+                                <div class="card-purchase custom-bg-blue default-section">
+                                    <form>
+                                        <div class="card-purchase-header mb-5">
+                                            <div class="title title-middle">Кресло мешок</div>
+                                            <div class="title title-big mb-4">Большой босс</div>
+                                            <p class="header-description general-text">Само название говорит само за себя, благодаря продуманной конструкции – это кресло
+                                                    подстраивается под изгиб Вашего тела, отлично держат спину и голову, а современный
+                                                    дизайн впишется как в стильный интерьер кафе или ресторана, так и в уютную
+                                                    обстановку гостиной. По Вашему желанию можно добавить карманы – чтобы вещи,
+                                                    которые вас расслабляют, всегда были под рукой.</p>
+                                        </div>
+                                        <div class="card-purchase-content pt-4 pb-4">
+                                            <div class="type-size d-flex flex-column flex-sm-row">
+                                                <div class="type">
+                                                    <div class="title title-middle mb-4">Тип ткани</div>
+                                                    <div class="d-flex">
+
+                                                        <button id="colorCardsModalbtn" class="colorCardsModalbtn" type="button"  data-toggle="modal" data-target="#colorCardsModal">
+                                                            <span class="img-wraper-material d-flex">
+                                                                <img src="img/yello_small.png" alt="">
+                                                            </span>
+                                                        </button>
+
+                                                        <div class="img-caption ml-3 d-flex flex-column align-items-baseline">
+                                                            <p>Тип материала</p>
+                                                            <button class="title title-middle bold p-0 click-type"type="button"  data-toggle="modal" data-target="#materialCardsModal">Oxford</button>
+                                                            <button class="colorCardsModalbtn text-left p-0" type="button"  data-toggle="modal" data-target="#colorCardsModal">
+                                                                <div class="colorCardsModalbtn-js">Желтый</div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/type-->
+                                                <div class="size mt-5 mt-lg-0">
+                                                    <div class="title title-middle mb-4">Размер</div>
+                                                    <div class="input-group d-flex justify-content-between">
+                                                        <input id="size1" name="size" type="radio" class="radio-btn d-none"/>
+                                                        <label for="size1">S</label>
+                                                        <input id="size2" name="size" type="radio" checked class="radio-btn d-none "/>
+                                                        <label for="size2">M</label>
+                                                        <input id="size3" name="size" type="radio" class="radio-btn d-none"/>
+                                                        <label for="size3">L</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /type-size -->
+                                            <div class="price">1 999 грн</div>
+                                        </div>
+                                        <!-- /card-purchase-content -->
+                                        <div class="btn-wrap mt-5">
+                                            <button class="actions-btn" type="submit">
+                                                <img src="img/right-arrow.svg" alt="">
+                                                <div class="btn-label shadow-lg rounded">Купить</div>
+                                            </button>
+
+                                        </div>
+                                        <!-- /card-purchase-content -->
+                                    </form>
+                                </div>
+                                <!-- /card-purchase -->
+                                <div class="exploitation default-section">
+                                    <div class="exploitation-header title title-big mb-4">
+                                        Условия эксплуатации
+                                    </div>
+                                    <div class="exploitation-content general-text">
+                                        <p>Почти каждая наша модель имеет внутренний чехол, это не только  увеличивает срок использования кресло-мешка, а также очень удобно при  уходе за ним. Кресло-мешок неприхотливая мебель, за таким креслом  очень легко ухаживать и поддерживать в чистоте. </p>
+                                        <p>Если у вас кресло-мешок в ткани Оксфорд и с внутренним чехлом, то  достаточно снять этот чехол с мешка и кинуть в стиральную машину. Но  стирать аккуратно и без отжима, дабы не повредить ткань. Если кресло-мешок в искусственной коже, то достаточно протереть его  влажной тряпочкой. </p>
+                                        <p>Если кресло-мешок из флока, внешние чехлы из флока желательно  отдавать в химчистку, или использовать деликатный режим стирки. </p>
+                                        <p>Если кресло-мешок сделан в оксфорде или во флоке и идет в один чехол  (дублирован изнутри флизелином), то разумеется, полноценной стирке  такое изделие не подлежит. В этом случае уход как за класической мягкой  мебелью. </p>
+                                        <p>Помните, что всегда можно воспользоваться влажной тряпкой и  стиральным средствами для мебели, т.к. используются лишь мебельные и  рюкзачные ткани.</p>
+                                    </div>
+                                </div>
+                                <div class="reviews default-section custom-bg-blue">
+                                    <div class="reviews-header title title-big mb-4">
+                                        <div>Отзывы</div>
+                                    </div>
+                                    <div class="reviews-content">
+                                        <div class="reviews-content-item">
+                                            <div class="item-header d-flex align-items-center">
+                                                <div class="mr-3">Михаил</div>
+                                                <ul class="d-flex">
+                                                    <li class="mr-2 liked">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li class="mr-2 liked">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li class="mr-2 liked">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li class="mr-2">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li class="mr-2">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!--/item-header-->
+                                            <p class="general-text">Шикарное кресло! Отлично вписывается практически в любой интерьер.  Качество на высоте.  Однозначно рекомендую :)</p>
+                                        </div>
+                                        <!--/reviews-content-item-->
+                                        <div class="reviews-content-item">
+                                            <div class="item-header d-flex align-items-center">
+                                                <div class="mr-3">Оксана</div>
+                                                <ul class="d-flex">
+                                                    <li class="mr-2">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li class="mr-2">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li class="mr-2">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li class="mr-2">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li class="mr-2">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!--/item-header-->
+                                            <p class="general-text">Шикарное кресло! Отлично вписывается практически в любой интерьер.  Качество на высоте.  Однозначно рекомендую :)</p>
+                                        </div>
+                                        <!--/reviews-content-item-->
+                                        <div class="reviews-content-item">
+                                            <div class="item-header d-flex align-items-center">
+                                                <div class="mr-3">Артур</div>
+                                                <ul class="d-flex">
+                                                    <li class="mr-2">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li class="mr-2">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li class="mr-2">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li class="mr-2">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li class="mr-2">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!--/item-header-->
+                                            <p class="general-text">Шикарное кресло! Отлично вписывается практически в любой интерьер.  Качество на высоте.  Однозначно рекомендую :)</p>
+                                        </div>
+                                        <!--/reviews-content-item-->
+                                    </div>
+                                    <!--/reviews-content-->
+                                </div>
+                                <!--/reviews-->
+                                <div class="write-reviews default-section">
+                                    <div class="write-reviews-header title title-big mb-4">
+                                        Оставь свой отзыв
+                                    </div>
+                                    <form class="write-reviews-form">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" placeholder="Имя">
+                                            </div>
+                                            <!--/col-lg-6-->
+                                            <div class="col-lg-6">
+                                                <div class="rating d-flex flex-row-reverse justify-content-between align-items-center mt-5 mt-lg-0">
+                                                    <input id="star5" name="star" type="radio" value="5" class="radio-btn d-none" />
+                                                    <label for="star5">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </label>
+                                                    <input id="star4" name="star" type="radio" value="4" class="radio-btn d-none" />
+                                                    <label for="star4">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </label>
+                                                    <input id="star3" name="star" type="radio" value="3" class="radio-btn d-none" />
+                                                    <label for="star3">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </label>
+                                                    <input id="star2" name="star" type="radio" value="2" class="radio-btn d-none" />
+                                                    <label for="star2">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </label>
+                                                    <input id="star1" name="star" type="radio" value="1" class="radio-btn d-none" />
+                                                    <label for="star1" >
+                                                        <i class="far fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </label>
+                                                    <div>Оценка</div>
+                                                    <!--<div class="clear"></div>-->
+                                                </div>
+                                                <!--/rating-->
+                                            </div>
+                                            <!--/col-lg-6-->
+                                            <div class="col-lg-12 mt-4">
+                                                <textarea class="form-control mt-5 mt-lg-0" placeholder="Сообщение"></textarea>
+                                            </div>
+                                        </div>
+                                            <button type="submit" class="btn-label shadow-lg rounded d-block mt-5 ml-auto">Отправить</button>
+                                    </form>
+                                    <!--/write-reviews-header-->
+                                </div>
+                                <!--/write-reviews-->
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- /row -->
+                </div>
+                <!-- /container-fluid -->
+            </div>
+            <!-- /store-wrap -->
+        </section>
+        <!--CARD-PRODUCT END-->
+    </main>
+
+<!--NMAIN END-->
+
+<!--FOOTER START-->
+<footer>
+    <div class="footer-wrap">
+        <div class="container-fluid">
+            <div class="row w-100 d-inline-flex flex-wrap">
+                <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-8 ">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo_pufok.svg" alt="logo">
+                        </a>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Введите Ваш Email адрес" aria-label="Recipient's username">
+                        </div>
+                        <div class="btn-wrap">
+                            <div class="btn-label shadow-lg rounded">Подписаться</div>
+                        </div>
+                        <p class="subscribe-description pr-5 mb-5">
+                            Будьте первым, кто узнает об эксклюзивных
+                            предложениях, последних новостях
+                            и топ-тенденциях.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="d-inline-flex flex-wrap menu-map">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="footer-map-title">О компании</div>
+                            <ul>
+                                <li>
+                                    <a href="#">О нас</a>
+                                </li>
+                                <li>
+                                    <a href="#">Сертификаты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Производство</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="footer-map-title">Ассортимент</div>
+                            <ul>
+                                <li>
+                                    <a href="#">Кресла-мешки</a>
+                                </li>
+                                <li>
+                                    <a href="#">Детская мебель</a>
+                                </li>
+                                <li>
+                                    <a href="#">Пуфы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Кресла Премиум</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="footer-map-title">Сервис</div>
+                            <ul>
+                                <li>
+                                    <a href="#">Ремонт</a>
+                                </li>
+                                <li>
+                                    <a href="#">Брендирование</a>
+                                </li>
+                                <li>
+                                    <a href="#">Замена чехлов</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="footer-map-title">Faq</div>
+                            <ul>
+                                <li>
+                                    <a href="#">Как заменить наполнитель</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pl-3 pl-md-0 mt-5">
+                <div class="footer-wraper col w-100 justify-content-start justify-content-md-end d-flex flex-column flex-lg-row">
+                    <ul class="d-flex flex-column flex-md-row flex-wrap col-5">
+                        <li>
+                            <a href="#">Способы оплаты и доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Реквизиты</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="col-1">
+                        <li class="soc-net d-flex flex-row">
+                            <a href="#">
+                                <!--<img src="img/vk-ico.svg" alt="">-->
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="#">
+                                <!--<img src="img/facebook-ico.svg" alt="">-->
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a href="#">
+                                <!--<img src="img/instagram-ico.svg" alt="">-->
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row d-flex flex-column flex-md-row justify-content-between reserved">
+                <ul class="d-flex flex-column justify-content-center flex-md-row">
+                    <li>Copyright © 2018, Pufok Theme by <a href="#">Evgeniy</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+                <p class="right">All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<!--FOOTER END-->
+
+<!-- Modal Cart-->
+<div class="modal fade bd-example-modal-lg" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <!--CART START-->
+            <section class="ordering cart">
+
+                <div class="container-fluid">
+
+                    <!--HEADER ORDERING START-->
+                    <div class="ordering-header pb-3">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="d-flex justify-content-between align-items-center flex-column-reverse flex-md-row">
+                                    <div class="title title-big">Оформление заказа</div>
+                                    <button type="button"  data-toggle="modal" data-target="#cartModal" class="cart-btn p-0">
+                                        <div class="close-icon">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- /col-lg-12 -->
+                        </div>
+                        <!--/ row-->
+                    </div>
+                    <!--HEADER ORDERING END-->
+
+                    <div class="ordering-content">
+
+                        <form>
+
+                            <!--ORDERING ITEM START-->
+                            <div class="ordering-item">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="wrap-img-desc d-flex justify-content-between mb-5 mb-sm-0">
+                                            <div class="d-flex justify-content-lg-start justify-content-between flex-column flex-sm-row">
+                                                <div class="content-img">
+                                                    <img src="img/small-armchair.png" alt="">
+                                                </div>
+                                                <div class="content-desc d-flex flex-column justify-content-around ml-5 mt-5 mt-sm-0">
+                                                    <div class="title title-middle bold">Большой босс</div>
+                                                    <div class="desc">
+                                                        <div class="desc-name mb-2">
+                                                            <span>Ткань верха (основа)</span>
+                                                            <span>Oxford Электрик</span>
+                                                        </div>
+                                                        <!-- /desc-name -->
+                                                        <div class="desc-size">Размер: Средний (М)</div>
+                                                    </div>
+                                                </div>
+                                                <!--/content-desc-->
+                                            </div>
+                                            <button type="button" class="wrap-close-icon d-lg-none">
+                                                <div class="close-icon">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="return-btn">Вернуть</div>
+                                            </button>
+                                        </div>
+                                        <!--/wrap-img-desc-->
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="wrap-count-price custom-blue d-flex justify-content-between  align-items-center pl-lg-5 flex-column flex-sm-row">
+                                            <div class="wrap-count align-items-center d-flex">
+                                                <button type="button">
+                                                    <div class="count-minus">
+                                                        <span></span>
+                                                    </div>
+                                                </button>
+
+                                                <div class="count-number">1</div>
+                                                <button type="button">
+                                                    <div class="count-plus">
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                            <!--/wrap-count-->
+                                            <div class="price d-flex align-items-center">1 044 грн</div>
+                                            <button type="button" class="wrap-close-icon p-0 ml-auto d-none d-lg-block">
+                                                <div class="close-icon">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="return-btn">Вернуть</div>
+                                            </button>
+                                        </div>
+                                        <!--/wrap-count-price-->
+                                    </div>
+                                    <!--/col-lg-7-->
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <!--ORDERING ITEM START-->
+
+                            <!--ORDERING ITEM START-->
+                            <div class="ordering-item">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="wrap-img-desc d-flex justify-content-between mb-5 mb-sm-0">
+                                            <div class="d-flex justify-content-lg-start justify-content-between flex-column flex-sm-row">
+                                                <div class="content-img">
+                                                    <img src="img/small-armchair.png" alt="">
+                                                </div>
+                                                <div class="content-desc d-flex flex-column justify-content-around ml-5 mt-5 mt-sm-0">
+                                                    <div class="title title-middle bold">Большой босс</div>
+                                                    <div class="desc">
+                                                        <div class="desc-name mb-2">
+                                                            <span>Ткань верха (основа)</span>
+                                                            <span>Oxford Электрик</span>
+                                                        </div>
+                                                        <!-- /desc-name -->
+                                                        <div class="desc-size">Размер: Средний (М)</div>
+                                                    </div>
+                                                </div>
+                                                <!--/content-desc-->
+                                            </div>
+                                            <button type="button" class="wrap-close-icon d-lg-none">
+                                                <div class="close-icon">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="return-btn">Вернуть</div>
+                                            </button>
+                                        </div>
+                                        <!--/wrap-img-desc-->
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="wrap-count-price custom-blue d-flex justify-content-between  align-items-center pl-lg-5 flex-column flex-sm-row">
+                                            <div class="wrap-count align-items-center d-flex">
+                                                <button type="button">
+                                                    <div class="count-minus">
+                                                        <span></span>
+                                                    </div>
+                                                </button>
+
+                                                <div class="count-number">1</div>
+                                                <button type="button">
+                                                    <div class="count-plus">
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                            <!--/wrap-count-->
+                                            <div class="price d-flex align-items-center">1 044 грн</div>
+                                            <button type="button" class="wrap-close-icon p-0 ml-auto d-none d-lg-block">
+                                                <div class="close-icon">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="return-btn">Вернуть</div>
+                                            </button>
+                                        </div>
+                                        <!--/wrap-count-price-->
+                                    </div>
+                                    <!--/col-lg-7-->
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <!--ORDERING ITEM START-->
+
+                            <!--ORDERING ITEM START-->
+                            <div class="ordering-item deleted">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="wrap-img-desc d-flex justify-content-between mb-5 mb-sm-0">
+                                            <div class="d-flex justify-content-lg-start justify-content-between flex-column flex-sm-row">
+                                                <div class="content-img">
+                                                    <img src="img/small-armchair.png" alt="">
+                                                </div>
+                                                <div class="content-desc d-flex flex-column justify-content-around ml-5 mt-5 mt-sm-0">
+                                                    <div class="title title-middle bold">Большой босс</div>
+                                                    <div class="desc">
+                                                        <div class="desc-name mb-2">
+                                                            <span>Ткань верха (основа)</span>
+                                                            <span>Oxford Электрик</span>
+                                                        </div>
+                                                        <!-- /desc-name -->
+                                                        <div class="desc-size">Размер: Средний (М)</div>
+                                                    </div>
+                                                </div>
+                                                <!--/content-desc-->
+                                            </div>
+                                            <button type="button" class="wrap-close-icon d-lg-none">
+                                                <div class="close-icon">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="return-btn">Вернуть</div>
+                                            </button>
+                                        </div>
+                                        <!--/wrap-img-desc-->
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="wrap-count-price custom-blue d-flex justify-content-between  align-items-center pl-lg-5 flex-column flex-sm-row">
+                                            <div class="wrap-count align-items-center d-flex">
+                                                <button type="button">
+                                                    <div class="count-minus">
+                                                        <span></span>
+                                                    </div>
+                                                </button>
+
+                                                <div class="count-number">1</div>
+                                                <button type="button">
+                                                    <div class="count-plus">
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                            <!--/wrap-count-->
+                                            <div class="price d-flex align-items-center">1 044 грн</div>
+                                            <button type="button" class="wrap-close-icon p-0 ml-auto d-none d-lg-block">
+                                                <div class="close-icon">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="return-btn">Вернуть</div>
+                                            </button>
+                                        </div>
+                                        <!--/wrap-count-price-->
+                                    </div>
+                                    <!--/col-lg-7-->
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <!--ORDERING ITEM START-->
+
+                        </form>
+
+                    </div>
+                    <!-- /ordering-content -->
+
+                    <div class="ordering-footer mt-lg-5 mb-5 mb-lg-0">
+                        <div class="row">
+                            <div class="col-lg-5"></div>
+                            <div class="col-lg-7">
+                                <div class="ordering-footer-content d-flex justify-content-between flex-column flex-sm-row align-items-center">
+                                    <div class="total">
+                                        <div class="title title-middle">Сумма заказа</div>
+                                        <div class="title title-big">2 088 грн</div>
+                                    </div>
+                                    <div class="btn-wrap mt-5 mt-sm-0">
+                                        <button>
+                                            <div class="btn-label shadow-lg rounded">Оформить заказ</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ordering-footer-->
+                </div>
+                <!--/ container-->
+
+            </section>
+            <!--CART END-->
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal Material Card-->
+<div class="modal fade bd-example-modal-lg" id="materialCardsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <!--MATERIAL START-->
+            <section class="material-cards">
+                <div class="material-wraper">
+                    <div class="container-fluid">
+                        <div class="row d-inline-flex justify-content-start pl-0 pr-0 pl-lg-5 pr-lg-5">
+                            <div class="col-12 col-md-6 col-lg-4 material-cards-item p-3 p-lg-5 ">
+                                <div class="d-flex flex-column">
+                                    <div class="header-material mb-4">
+                                        <div class="subtitle-material">Ткань</div>
+                                        <div class="title-material">Oxford</div>
+                                    </div>
+                                    <div class="img-material mb-5">
+                                        <img src="img/razdel_tkani/oxford.png" alt="">
+                                    </div>
+                                    <div class="description-material">
+                                        <p>
+                                            Ткань Oxford изготовлена на основе нитей полиэстера.
+                                            Это синтетическая ткань, обладающая целым рядом достоинств,
+                                            которые делают эту ткань отличным материалом для производства бескаркасной мебели.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 material-cards-item p-3 p-lg-5 ">
+                                <div class="d-flex flex-column">
+                                    <div class="header-material mb-4">
+                                        <div class="subtitle-material">Ткань</div>
+                                        <div class="title-material">Velvet Capri</div>
+                                    </div>
+                                    <div class="img-material mb-5">
+                                        <img src="img/razdel_tkani/velvet_capri.png" alt="">
+                                    </div>
+                                    <div class="description-material">
+                                        <p>
+                                            Ставший хитом материал получен современным высокотехнологичным процессом производства,
+                                            где ткань проходит специальные обработки, чтобы достичь мягкости,
+                                            сочетания рельефной поверхности, отличного «touching effect», эластичности,
+                                            прекрасной устойчивости на истирание и зрительного эффекта бархата.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 material-cards-item p-3 p-lg-5 ">
+                                <div class="d-flex flex-column">
+                                    <div class="header-material mb-4">
+                                        <div class="subtitle-material">Ткань</div>
+                                        <div class="title-material">Zeus</div>
+                                    </div>
+                                    <div class="img-material mb-5">
+                                        <img src="img/razdel_tkani/zeus.png" alt="">
+                                    </div>
+                                    <div class="description-material">
+                                        <p>
+                                            Эко-кожа Zeus устойчива к протиранию, трещинам,
+                                            царапинам и изменению цвета под воздействием солнечных лучей.
+                                            Покрытие кожзама полиуретаном обеспечивает отличную циркуляцию воздуха,
+                                            водоотталкивающий эффект.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 material-cards-item p-3 p-lg-5 ">
+                                <div class="d-flex flex-column">
+                                    <div class="header-material mb-4">
+                                        <div class="subtitle-material">Ткань</div>
+                                        <div class="title-material">Flay</div>
+                                    </div>
+                                    <div class="img-material mb-5">
+                                        <img src="img/razdel_tkani/flay.png" alt="">
+                                    </div>
+                                    <div class="description-material">
+                                        <p>
+                                            Практичный, уравновешенный и элегантный материал Flock сможет стать
+                                            помощником в создании интерьера любого стиля.
+                                            Мягкая бархатистая текстура ткани делает ее идеальным вариантом для любимого
+                                            домашнего кресло-мешка или же для яркого акцента в детскую комнату.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 material-cards-item p-3 p-lg-5 ">
+                                <div class="d-flex flex-column">
+                                    <div class="header-material mb-4">
+                                        <div class="subtitle-material">Ткань</div>
+                                        <div class="title-material">Velour Print</div>
+                                    </div>
+                                    <div class="img-material mb-5">
+                                        <img src="img/razdel_tkani/velour_print.png" alt="">
+                                    </div>
+                                    <div class="description-material">
+                                        <p>
+                                            Практичный, уравновешенный и элегантный материал Flock сможет стать помощником
+                                            в создании интерьера любого стиля.
+                                            Мягкая бархатистая текстура ткани делает ее идеальным вариантом для любимого
+                                            домашнего кресло-мешка или же для яркого акцента в детскую комнату.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 material-cards-item p-3 p-lg-5 ">
+                                <div class="d-flex flex-column">
+                                    <div class="header-material mb-4">
+                                        <div class="subtitle-material">Ткань</div>
+                                        <div class="title-material">Bond</div>
+                                    </div>
+                                    <div class="img-material mb-5">
+                                        <img src="img/razdel_tkani/bond.png" alt="">
+                                    </div>
+                                    <div class="description-material">
+                                        <p>
+                                            Практичный, уравновешенный и элегантный материал
+                                            Flock сможет стать помощником в создании интерьера любого стиля.
+                                            Мягкая бархатистая текстура ткани делает ее идеальным вариантом для любимого
+                                            домашнего кресло-мешка или же для яркого акцента в детскую комнату.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 material-cards-item p-3 p-lg-5 ">
+                                <div class="d-flex flex-column">
+                                    <div class="header-material mb-4">
+                                        <div class="subtitle-material">Ткань</div>
+                                        <div class="title-material">Sofitel</div>
+                                    </div>
+                                    <div class="img-material mb-5">
+                                        <img src="img/razdel_tkani/sofitel.png" alt="">
+                                    </div>
+                                    <div class="description-material">
+                                        <p>
+                                            Практичный, уравновешенный и элегантный материал Flock
+                                            сможет стать помощником в создании интерьера любого стиля.
+                                            Мягкая бархатистая текстура ткани делает ее идеальным вариантом для
+                                            любимого домашнего кресло-мешка или же для яркого акцента в детскую комнату.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 material-cards-item p-3 p-lg-5 ">
+                                <div class="d-flex flex-column">
+                                    <div class="header-material mb-4">
+                                        <div class="subtitle-material">Ткань</div>
+                                        <div class="title-material">Flock</div>
+                                    </div>
+                                    <div class="img-material mb-5">
+                                        <img src="img/razdel_tkani/flock.png" alt="">
+                                    </div>
+                                    <div class="description-material">
+                                        <p>
+                                            Практичный, уравновешенный и элегантный материал Flock
+                                            сможет стать помощником в создании интерьера любого стиля.
+                                            Мягкая бархатистая текстура ткани делает ее идеальным вариантом для
+                                            любимого домашнего кресло-мешка или же для яркого акцента в детскую комнату.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 material-cards-item p-3 p-lg-5 ">
+                                <div class="d-flex flex-column">
+                                    <div class="header-material mb-4">
+                                        <div class="subtitle-material">Ткань</div>
+                                        <div class="title-material">Queens</div>
+                                    </div>
+                                    <div class="img-material mb-5">
+                                        <img src="img/razdel_tkani/queens.png" alt="">
+                                    </div>
+                                    <div class="description-material">
+                                        <p>
+                                            Практичный, уравновешенный и элегантный материал Flock
+                                            сможет стать помощником в создании интерьера любого стиля.
+                                            Мягкая бархатистая текстура ткани делает ее идеальным вариантом для
+                                            любимого домашнего кресло-мешка или же для яркого акцента в детскую комнату.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 material-cards-item p-3 p-lg-5 ">
+                                <div class="d-flex flex-column">
+                                    <div class="header-material mb-4">
+                                        <div class="subtitle-material">Ткань</div>
+                                        <div class="title-material">New Yourk</div>
+                                    </div>
+                                    <div class="img-material mb-5">
+                                        <img src="img/razdel_tkani/new_yourk.png" alt="">
+                                    </div>
+                                    <div class="description-material">
+                                        <p>
+                                            Практичный, уравновешенный и элегантный материал Flock
+                                            сможет стать помощником в создании интерьера любого стиля.
+                                            Мягкая бархатистая текстура ткани делает ее идеальным вариантом для
+                                            любимого домашнего кресло-мешка или же для яркого акцента в детскую комнату.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 material-cards-item p-3 p-lg-5 ">
+                                <div class="d-flex flex-column">
+                                    <div class="header-material mb-4">
+                                        <div class="subtitle-material">Ткань</div>
+                                        <div class="title-material">Rainbow</div>
+                                    </div>
+                                    <div class="img-material mb-5">
+                                        <img src="img/razdel_tkani/rainbow.png" alt="">
+                                    </div>
+                                    <div class="description-material">
+                                        <p>
+                                            Практичный, уравновешенный и элегантный материал Flock
+                                            сможет стать помощником в создании интерьера любого стиля.
+                                            Мягкая бархатистая текстура ткани делает ее идеальным вариантом для
+                                            любимого домашнего кресло-мешка или же для яркого акцента в детскую комнату.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 material-cards-item p-3 p-lg-5 ">
+                                <div class="d-flex flex-column">
+                                    <div class="header-material mb-4">
+                                        <div class="subtitle-material">Ткань</div>
+                                        <div class="title-material">El Dorado</div>
+                                    </div>
+                                    <div class="img-material mb-5">
+                                        <img src="img/razdel_tkani/el_dorado.png" alt="">
+                                    </div>
+                                    <div class="description-material">
+                                        <p>
+                                            Практичный, уравновешенный и элегантный материал Flock
+                                            сможет стать помощником в создании интерьера любого стиля.
+                                            Мягкая бархатистая текстура ткани делает ее идеальным вариантом для
+                                            любимого домашнего кресло-мешка или же для яркого акцента в детскую комнату.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 material-cards-item p-3 p-lg-5 ">
+                                <div class="d-flex flex-column">
+                                    <div class="header-material mb-4">
+                                        <div class="subtitle-material">Ткань</div>
+                                        <div class="title-material">Dream Seed</div>
+                                    </div>
+                                    <div class="img-material mb-5">
+                                        <img src="img/razdel_tkani/dream_seed.png" alt="">
+                                    </div>
+                                    <div class="description-material">
+                                        <p>
+                                            Практичный, уравновешенный и элегантный материал Flock
+                                            сможет стать помощником в создании интерьера любого стиля.
+                                            Мягкая бархатистая текстура ткани делает ее идеальным вариантом для
+                                            любимого домашнего кресло-мешка или же для яркого акцента в детскую комнату.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 material-cards-item p-3 p-lg-5 ">
+                                <div class="d-flex flex-column">
+                                    <div class="header-material mb-4">
+                                        <div class="subtitle-material">Ткань</div>
+                                        <div class="title-material">Tala Vlada</div>
+                                    </div>
+                                    <div class="img-material mb-5">
+                                        <img src="img/razdel_tkani/talavlada.png" alt="">
+                                    </div>
+                                    <div class="description-material">
+                                        <p>
+                                            Практичный, уравновешенный и элегантный материал Flock
+                                            сможет стать помощником в создании интерьера любого стиля.
+                                            Мягкая бархатистая текстура ткани делает ее идеальным вариантом для
+                                            любимого домашнего кресло-мешка или же для яркого акцента в детскую комнату.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--MATERIAL SEND-->
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal Color Card-->
+<div class="modal fade bd-example-modal-lg" id="colorCardsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <!--CARDSTORE START-->
+            <section class="cardstore cloth">
+                <div class="cardstore-wraper">
+                    <div class="">
+                        <div class="d-flex flex-column flex-lg-row justify-content-between">
+                            <div class="col-12 col-lg-5 main-bg-gray">
+                                <div class="selected-material full-description pt-5">
+                                    <form>
+                                        <div class="d-flex flex-column selected-material-wrap align-items-center ">
+                                            <div class="img-product col-10">
+                                                <img src="img/cloth-1.jpg" alt="">
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="header-material mb-2 mt-5">
+                                                    <div class="subtitle-material">Ткань</div>
+                                                    <!--<div class="title-material title-js">Oxford</div>-->
+                                                    <button class="title title-js title-middle bold p-0 click-type" type="button" data-toggle="modal" data-target="#materialCardsModal">
+                                                        <span class="title-material">Oxford</span>
+                                                    </button>
+                                                </div>
+                                                <div class="title-product text-left">
+                                                    <p>Желтый</p>
+                                                </div>
+                                                <div class="btn-wrap mt-4">
+                                                    <button class="actions-btn" type="button"  data-toggle="modal" data-target="#colorCardsModal">
+                                                        <img src="img/right-arrow.svg" alt="">
+                                                    </button>
+                                                    <div class="btn-label shadow-lg rounded" data-toggle="modal" data-target="#colorCardsModal">Выбрать</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="full-description">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="card modal-card">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseThree">
+                                                <div class="header-material mb-4">
+                                                    <div class="title-material">Описание</div>
+                                                </div>
+                                            </button>
+
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <div class="description-material">
+                                                        <p>
+                                                            Особенность переплетения нитей ткани оксфорд —
+                                                            рогожка, в которой основные нити образуют собой
+                                                            квадратики, расположенные в шахматном порядке.
+                                                            За счёт этого переплетения и прочных
+                                                            ненатуральных волокон материал очень прочный.
+                                                        </p>
+                                                        <p>
+                                                            При изготовлении продукции ТМ Bruni используется
+                                                            ткань Oxford PU.
+                                                        </p>
+                                                        <p>
+                                                            Покрытие Oxford PU (полиуретан) — это внутреннее
+                                                            (бесцветное) покрытие, обеспечивающее
+                                                            водонепроницаемость и ветрозащитные свойства
+                                                            ткани.
+                                                        </p>
+                                                        <p>
+                                                            Скрепляющий слой полиуретана в отличие от
+                                                            поливинилхлорида (ПВХ) имеет значительно выше
+                                                            температуру плавления и это позволяет
+                                                            использовать эту ткань для нанесения на ней
+                                                            сублимационной печати. Соответственно, именно
+                                                            ткань оксфорд мы чаще всего используем для
+                                                            создания уникальных брендированных кресел с
+                                                            нанесениями логотипов или же слоганов вашей
+                                                            компании.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card modal-card">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseThree">
+                                                <div class="header-material mb-4">
+                                                    <div class="title-material">Преимущества</div>
+                                                </div>
+                                            </button>
+
+                                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <div class="description-material">
+                                                        <p>
+                                                            - Водоотталкивающие характеристики
+                                                        </p>
+                                                        <p>
+                                                            - Износостойкость
+                                                        </p>
+                                                        <p>
+                                                            - Высокая прочность
+                                                        </p>
+                                                        <p>
+                                                            - Доступная цена
+                                                        </p>
+                                                        <p>
+                                                            - Простота ухода
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <section>
+                                        <div class="values-material">
+                                            <div class="d-flex  justify-content-between">
+                                                <div class="tittle-value">Износостойкость</div>
+                                                <div class="field-value">50 000 циклов</div>
+                                                <div></div>
+                                            </div>
+                                            <div class="d-flex  justify-content-between">
+                                                <div class="tittle-value">Плотность</div>
+                                                <div class="field-value">230г/м2</div>
+                                                <div></div>
+                                            </div>
+                                            <div class="d-flex  justify-content-between">
+                                                <div class="tittle-value">Состав</div>
+                                                <div class="field-value">100% ПЭ</div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 pt-5">
+                                <div class="row d-flex justify-content-end pt-5">
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-1.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Желтый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-2.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Синий</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-3.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Темно-синий</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-4.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Бежевый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-5.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Ченый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-6.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Серый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-7.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Зеленый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-8.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Салатовый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-9.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Лиловый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-10.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Красный</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-11.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Белый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-12.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Фиолетовый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-5.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Ченый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-6.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Серый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-7.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Зеленый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-8.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Салатовый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-9.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Лиловый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-10.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Красный</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-11.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Белый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-3 color-cards-item">
+                                        <div class="d-flex flex-column card-irem">
+                                            <div class="img-product">
+                                                <img src="img/cloth-12.jpg" alt="">
+                                            </div>
+                                            <div class="title-product">
+                                                <p>Фиолетовый</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--CARD STORE SEND-->
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="js/plugin.js"></script>
+
+<script>
+    counter.start();
+    getMaterial.title();
+    getColor.color();
+</script>
+
+</body>
+</html>

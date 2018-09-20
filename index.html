@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Pufok</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!--Custom style-->
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+
+<!--HEADER START-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="sidebar-btn mr-5 d-none d-lg-block">
+            <img src="img/menu-ico.svg" alt="button">
+            <span class="close-icon ml-auto">
+                <span></span>
+                <span></span>
+            </span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="img/logo_pufok.svg" alt="logo">
+        </a>
+        <button type="button"  data-toggle="modal" data-target="#cartModal" class="cart-btn d-lg-none">
+            <img src="img/cart-ico.svg" alt="cart">
+            <span class="badge">1</span>
+        </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nserviceNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nserviceNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/home">Главная <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Каталог</a>
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link" href="#">Ремонт</a>
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link" href="#">Брендирование</a>
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link" href="#">Замена чехлов</a>
+                </li>
+                <li class="nav-item dropdown d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Сервис
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Ремонт</a>
+                        <a class="dropdown-item" href="#">Брендирование</a>
+                        <a class="dropdown-item" href="#">Замена чехлов</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Акции</a>
+                </li>
+
+                <li class="nav-item d-lg-none d-block">
+                    <a class="nav-link" href="#">Сертификаты</a>
+                </li>
+                <li class="nav-item d-lg-none d-block">
+                    <a class="nav-link" href="#">Производство</a>
+                </li>
+                <li class="nav-item d-lg-none d-block">
+                    <a class="nav-link" href="#">Способы оплаты и доставки</a>
+                </li>
+                <li class="nav-item d-lg-none d-block">
+                    <a class="nav-link" href="#">Отзывы</a>
+                </li>
+                <li class="nav-item d-lg-none d-block">
+                    <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="nav-item contact-item dropdown d-lg-flex align-items-center  d-none">
+                    <img src="img/tel-ico.svg" alt="">
+                    <a class="nav-link dropdown-toggle" href="#" id="contactDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        +38 (063) 804 02 70
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="contactDropdownMenuLink">
+                        <a class="dropdown-item" href="tel:+380638040270">+38 (063) 804 02 70</a>
+                        <a class="dropdown-item" href="tel:+380677799828">+38 (067) 779 98 28</a>
+                    </div>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <button type="button"  data-toggle="modal" data-target="#cartModal" class="cart-btn mr-5">
+                        <img src="img/cart-ico.svg" alt="cart">
+                        <span class="badge">1</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="tel-wraper d-lg-none d-flex flex-row justify-content-around pl-3">
+        <a class="dropdown-item p-0" href="tel:+380638040270">+38 (063) 804 02 70</a>
+        <a class="dropdown-item p-0" href="tel:+380677799828">+38 (067) 779 98 28</a>
+    </div>
+</header>
+<!--HEADER END-->
+
+<!--MAIN START-->
+    <main>
+
+        <!--SIDEBAR START-->
+        <div class="menu-form d-none d-lg-block">
+            <div class="h-100 d-flex">
+                <div class="col-12 col-lg-4 h-100 pt-5 pb-5">
+                    <div class="d-flex flex-column justify-content-between align-items-center h-100">
+                        <div class="col-12 col-lg-6">
+                            <nav class="sidebar-nav">
+                                <ul class="d-flex flex-column justify-content-center">
+                                    <li><a href="">Главная</a></li>
+                                    <li><a href="">Сертификаты</a></li>
+                                    <li><a href="">Производство</a></li>
+                                    <li><a href="">Способы оплаты и доставки</a></li>
+                                    <li><a href="">Акции</a></li>
+                                    <li><a href="">Отзывы</a></li>
+                                    <li><a href="">О нас</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="sidebar-contacts">
+                                <div class="title title-big">Контакты</div>
+                                <nav>
+                                    <div class="nav-title mb-3">
+                                        Пн-Пн: с 9:00 до 18:00
+                                    </div>
+                                    <ul>
+                                        <li class="mb-1"><a href="tel:+380638040270">Т. +38(063) 804 02 70</a></li>
+                                        <li><a href="tel:+380677799828">Т. +38(067) 779 98 28</a></li>
+                                        <li><a href="email:pufok.obod@gmail.com">pufok.obod@gmail.com</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 pr-lg-0">
+                    <div class="form-container h-100 pt-5 pl-5">
+                        <div class="d-flex justify-content-center">
+                            <div class="col-11 col-lg-9">
+                                <div class="d-flex flex-column">
+                                    <div class="title title-big mb-1">Форма обратной связи</div>
+                                    <p>Все поля являются обязательными для заполнения</p>
+                                    <div class="ordering-form mt-5">
+                                        <div class="ordering-form-inputs custom-height">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <input type="text" placeholder="ИМЯ" class="form-control input-name" name="first_name">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <input type="text" placeholder="Почта" class="form-control" name="last_name">
+                                                </div>
+                                                <div class="col-lg-12 mt-4">
+                                                    <textarea class="form-control mt-5 mt-lg-0" placeholder="Сообщение"></textarea>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="ordering-form-inputs custom-height  d-none pt-5">
+                                            <div class="title title-big mb-1">Спасибо!</div>
+                                            <p>Ваше сообщение успешно отправлено</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap d-flex justify-content-end mt-5">
+                                    <button class="actions-btn actions-btn-js">
+                                        <img src="img/right-arrow.svg" alt="">
+                                    </button>
+                                    <div class="btn-label btn-toggle-js actions-btn-js shadow-lg rounded">Отправить</div>
+                                    <div class="btn-label btn-toggle-js actions-btn-js d-none shadow-lg rounded">В каталог</div>
+                                </div>
+                                <ul class="mt-5">
+                                    <li class="soc-net d-flex flex-row justify-content-end">
+                                        <a href="#" class="mr-4">
+                                            <i class="fab fa-vk"></i>
+                                        </a>
+                                        <a href="#" class="mr-4">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--SIDEBAR END-->
+
+        <!--MAIN-ORDERING START-->
+        <div class="main-ordering">
+            <div class="col-12 col-lg-6">
+                <div class="title mt-5 mt-md-0">Бескаркасная мебель <span>Pufok</span> под заказ</div>
+                <div class="row subtitle">
+                    <div class="col-12 col-md-6 mb-3 mb-md-0">
+                        <p>
+                            Мы стараемся для вас сделать этот
+                            мир более удобным и комфортным.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p>
+                            Отдыхай и наслаждайся каждым
+                            моментом жизни!
+                        </p>
+                    </div>
+                </div>
+                <div class="row actions-form flex-column flex-lg-row">
+                    <div class="col-12 col-lg-6 d-lg-inline-flex d-none align-items-center">
+                        <button class="actions-btn actions-btn-js">
+                            <img src="img/right-arrow.svg" alt="">
+                        </button>
+                        <div class="input-wrapper d-flex align-items-center shadow-lg">
+                            <div class="input-group">
+                                <input type="tel" class="form-control" placeholder="+38(0" aria-label="Recipient's username" >
+                                <input type="text" class="form-control" placeholder="Имя" aria-label="Recipient's username" >
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary actions-btn-js" type="button" id="open-form">Заказать звонок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-inline-flex align-items-center d-lg-none">
+                        <div class="btn-wrap btn-mobile" data-toggle="modal" data-target="#contactFormModal">
+                            <button type="button" class="actions-btn">
+                                <img src="img/right-arrow.svg" alt="">
+                            </button>
+                            <div class="btn-label shadow-lg rounded">Узнать больше</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mt-5 mb-5">
+                        <div class="play-wrap d-flex flex-row align-items-center">
+                            <div class="btn-circle">
+                                <button class="play-btn">
+                                    <img src="img/triangle.svg" alt="">
+                                </button>
+                            </div>
+                            <p>Смотреть видео</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--MAIN-ORDERING END-->
+
+        <!--ADVANTAGES START-->
+        <div class="advantages">
+            <div class="title col-12">
+                01. Наши преимущества
+            </div>
+            <div class="advantages-list">
+                <ul class="d-inline-flex flex-wrap">
+                    <li class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+                        <div class="ico-wrap">
+                            <p>icon</p>
+                        </div>
+                        <div class="title-item">Двойной наполнитель</div>
+                        <div class="description">
+                            <p>
+                                Только мы используем сертифицированный
+                                двойной наполнитель, что делает нашу
+                                продукцию особенно комфортной и безопасной,
+                                что подтверждается специальными установленными
+                                документами.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+                        <div class="ico-wrap">
+                            <p>icon</p>
+                        </div>
+                        <div class="title-item">Эксклюзивные модели</div>
+                        <div class="description">
+                            <p>
+                                Мы предоставляем разработку эксклюзивных моделей особенной формы из особенных тканей!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+                        <div class="ico-wrap">
+                            <p>icon</p>
+                        </div>
+                        <div class="title-item">Двойной шов</div>
+                        <div class="description">
+                            <p>
+                                Внутренние и внешние что создает
+                                дополнительную прочность при использовании,
+                                и позволяет креслу прослужить намного дольше,
+                                не заботясь о дополнительных расходах на его
+                                ремонт.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+                        <div class="ico-wrap">
+                            <p>icon</p>
+                        </div>
+                        <div class="title-item">Большой опыт</div>
+                        <div class="description">
+                            <p>
+                                У нас работают технологи с опытом работы
+                                20 лет!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+                        <div class="ico-wrap">
+                            <p>icon</p>
+                        </div>
+                        <div class="title-item">Цены от производителя</div>
+                        <div class="description">
+                            <p>
+                                Мы являемся производителями наполнителя для
+                                наших кресел, что существенно удешевляет их
+                                стоимость!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+                        <div class="ico-wrap">
+                            <p>icon</p>
+                        </div>
+                        <div class="title-item">24/7</div>
+                        <div class="description">
+                            <p>
+                                Вы покупаете кресло, не выходя из дома или
+                                офиса!
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--ADVANTAGES END-->
+
+        <!-- ABOUT AS START-->
+        <div class="aboutas position-relative">
+            <div class="bg-wraper"></div>
+            <div class="select-wrap col-12 col-md-5 position-absolute">
+                <div class="title">02. О компании</div>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <span>О нас</span>
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <img src="img/plus-ico.svg" alt="plus" class="plus">
+                                    <img src="img/minus-ico.svg" alt="plus" class="minus">
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show"  data-parent="#accordionExample">
+                            <div class="card-body">
+                                Компания Pufok производит современную бескаркасную мебель, с
+                                учетом всех последних новинок в сфере мебельного производства,
+                                ассортимент выпускаемой продукции насчитывает огромное
+                                количество наименований, и бесконечное количество комбинаций и
+                                сочетаний. Качество нашей продукции и сервис - приоритет в нашей
+                                работе.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <span>Производство</span>
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <img src="img/plus-ico.svg" alt="plus" class="plus">
+                                    <img src="img/minus-ico.svg" alt="plus" class="minus">
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse"  data-parent="#accordionExample">
+                            <div class="card-body">
+                                Наше производство, это прежде всего слаженная работа целой команды профессионалов,
+                                которые объединены общей идей создания действительно качественного товара.
+                                Мы в первую очередь создаем не просто вещи, мы выпускаем эмоции и чувства наших клиентов.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <span>Сервис</span>
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <img src="img/plus-ico.svg" alt="plus" class="plus">
+                                    <img src="img/minus-ico.svg" alt="plus" class="minus">
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    При повреждении кресла, мы всегда можем
+                                    произвести ремонт любой сложности
+                                </p>
+                                <div class="wraper-column d-flex flex-column flex-md-row">
+                                    <div class="col-12 col-md-6 no-gutters">
+                                        <p>- Разошлись швы</p>
+                                        <p>- Замена молнии</p>
+                                        <p>- Замена собачки</p>
+                                        <p>- Замена люверсов</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 no-gutters">
+                                        <p>- Замена части внешнего чехла кресла</p>
+                                        <p>- Замена внутреннего чехла</p>
+                                        <p>- Замена переносной ручки и т.д</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <button class="actions-btn">
+                        <img src="img/right-arrow.svg" alt="">
+                    </button>
+                    <div class="btn-label shadow-lg rounded">Узнать больше</div>
+                </div>
+            </div>
+        </div>
+        <!-- ABOUT AS END-->
+
+        <!-- OUR CLIENTS START-->
+        <div class="ourclints d-flex flex-wrap">
+            <div class="col-12 col-md-6">
+                <div id="carouselExampleIndicators" class="carousel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-inline-flex flex-wrap">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-01.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-02.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-03.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-04.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-05.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-06.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-07.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-08.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-09.svg" alt="First slide">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-inline-flex flex-wrap">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-01.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-02.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-03.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-04.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-05.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-06.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-07.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-08.svg" alt="First slide">
+                                <img class="carousel-img d-block col-3" src="img/logo-partners/logo-partner-09.svg" alt="First slide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="title">03. Наши клиенты</div>
+                <img class="quotationmark-ico" src="img/quotationmark-ico.svg" alt="quotationmark-ico">
+                <div class="subtitle">
+                    <p>Большре спасибо за качественно выполненные кресла. Очень порадовала,
+                        что заказ был выполнен быстро и хорошо. Радует когда люди отвественно
+                        и креативно подходят к своей работе. От кресла в виде птичек мои дети
+                        были в востроге! Спасибо еще раз!</p>
+                </div>
+            </div>
+        </div>
+        <!--OUR CLIENTS END-->
+
+    </main>
+<!--MAIN END-->
+
+<!--FOOTER START-->
+    <footer>
+        <div class="footer-wrap">
+            <div class="container-fluid">
+                <div class="row w-100 d-inline-flex flex-wrap">
+                    <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-8 ">
+                            <a class="navbar-brand" href="#">
+                                <img src="img/logo_pufok.svg" alt="logo">
+                            </a>
+                            <div class="input-group d-none">
+                                <input type="text" class="form-control" placeholder="Введите Ваш Email адрес" aria-label="Recipient's username">
+                            </div>
+                            <div class="btn-wrap d-none">
+                                <div class="btn-label shadow-lg rounded">Подписаться</div>
+                            </div>
+                            <p class="subscribe-description pr-5 mb-5 d-none">
+                                Будьте первым, кто узнает об эксклюзивных
+                                предложениях, последних новостях
+                                и топ-тенденциях.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="d-inline-flex flex-wrap menu-map">
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="footer-map-title">О компании</div>
+                                <ul>
+                                    <li>
+                                        <a href="#">О нас</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Сертификаты</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Производство</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Отзывы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="footer-map-title">Ассортимент</div>
+                                <ul>
+                                    <li>
+                                        <a href="#">Кресла-мешки</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Детская мебель</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Пуфы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кресла Премиум</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="footer-map-title">Сервис</div>
+                                <ul>
+                                    <li>
+                                        <a href="#">Ремонт</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Брендирование</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Замена чехлов</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="footer-map-title">Faq</div>
+                                <ul>
+                                    <li>
+                                        <a href="#">Как заменить наполнитель</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pl-3 pl-md-0 mt-5">
+                    <div class="footer-wraper w-100 justify-content-start justify-content-md-end d-flex flex-column flex-lg-row">
+                        <ul class="d-flex flex-column flex-md-row flex-wrap col-12 col-lg-5">
+                            <li>
+                                <a href="#">Способы оплаты и доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">Реквизиты</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <ul class="col-12 col-lg-1">
+                            <li class="soc-net d-flex flex-row">
+                                <a href="#">
+                                    <i class="fab fa-vk"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row d-flex flex-column flex-md-row justify-content-between reserved">
+                    <ul class="d-flex flex-column justify-content-center flex-md-row">
+                        <li>Copyright © 2018, Pufok Theme by <a href="#">Evgeniy</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                    <p class="right">All Rights Reserved.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+<!--FOOTER END-->
+
+<!-- Modal Cart-->
+<div class="modal fade bd-example-modal-lg" id="cartModal" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="ordering cart">
+                <div class="container-fluid">
+
+                    <!--HEADER ORDERING START-->
+                    <div class="ordering-header pb-3">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="d-flex justify-content-between align-items-center flex-column-reverse flex-md-row">
+                                    <div class="title title-big">Оформление заказа</div>
+                                    <button type="button"  data-toggle="modal" data-target="#cartModal" class="cart-btn p-0">
+                                        <span class="close-icon ml-auto d-block">
+                                            <span></span>
+                                            <span></span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--HEADER ORDERING END-->
+
+                    <div class="ordering-content">
+
+                        <!--ORDERING ITEM START-->
+                        <div class="ordering-item">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="wrap-img-desc d-flex justify-content-between mb-5 mb-sm-0">
+                                        <div class="d-flex justify-content-lg-start justify-content-between flex-column flex-sm-row">
+                                            <div class="content-img">
+                                                <img src="img/small-armchair.png" alt="">
+                                            </div>
+                                            <div class="content-desc d-flex flex-column justify-content-around ml-5 mt-5 mt-sm-0">
+                                                <div class="title title-middle bold">Большой босс</div>
+                                                <div class="desc">
+                                                    <div class="desc-name mb-2">
+                                                        <span>Ткань верха (основа)</span>
+                                                        <span>Oxford Электрик</span>
+                                                    </div>
+                                                    <!-- /desc-name -->
+                                                    <div class="desc-size">Размер: Средний (М)</div>
+                                                </div>
+                                            </div>
+                                            <!--/content-desc-->
+                                        </div>
+                                        <button type="button" class="wrap-close-icon d-lg-none">
+                                            <span class="close-icon">
+                                                <span></span>
+                                                <span></span>
+                                            </span>
+                                            <span class="return-btn">Вернуть</span>
+                                        </button>
+                                    </div>
+                                    <!--/wrap-img-desc-->
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="wrap-count-price custom-blue d-flex justify-content-between  align-items-center pl-lg-5 flex-column flex-sm-row">
+                                        <div class="wrap-count align-items-center d-flex">
+                                            <button class="count-minus-js">
+                                                <span class="count-minus">
+                                                    <span></span>
+                                                </span>
+                                            </button>
+
+                                            <input type="text" class="count-number" value="1">
+                                            <button class="count-minus-plus">
+
+                                                <span class="count-plus">
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <!--/wrap-count-->
+                                        <div class="price d-flex align-items-center">1 044 грн</div>
+                                        <button type="button" class="wrap-close-icon p-0 ml-auto d-none d-lg-block">
+                                            <span class="close-icon">
+                                                <span></span>
+                                                <span></span>
+                                            </span>
+                                            <span class="return-btn">Вернуть</span>
+                                        </button>
+                                    </div>
+                                    <!--/wrap-count-price-->
+                                </div>
+                                <!--/col-lg-7-->
+                            </div>
+                            <!--/row-->
+                        </div>
+                        <!--ORDERING ITEM START-->
+
+                        <!--ORDERING ITEM START-->
+                        <div class="ordering-item">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="wrap-img-desc d-flex justify-content-between mb-5 mb-sm-0">
+                                        <div class="d-flex justify-content-lg-start justify-content-between flex-column flex-sm-row">
+                                            <div class="content-img">
+                                                <img src="img/small-armchair.png" alt="">
+                                            </div>
+                                            <div class="content-desc d-flex flex-column justify-content-around ml-5 mt-5 mt-sm-0">
+                                                <div class="title title-middle bold">Большой босс</div>
+                                                <div class="desc">
+                                                    <div class="desc-name mb-2">
+                                                        <span>Ткань верха (основа)</span>
+                                                        <span>Oxford Электрик</span>
+                                                    </div>
+                                                    <!-- /desc-name -->
+                                                    <div class="desc-size">Размер: Средний (М)</div>
+                                                </div>
+                                            </div>
+                                            <!--/content-desc-->
+                                        </div>
+                                        <button type="button" class="wrap-close-icon d-lg-none">
+                                            <span class="close-icon">
+                                                <span></span>
+                                                <span></span>
+                                            </span>
+                                            <span class="return-btn">Вернуть</span>
+                                        </button>
+                                    </div>
+                                    <!--/wrap-img-desc-->
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="wrap-count-price custom-blue d-flex justify-content-between  align-items-center pl-lg-5 flex-column flex-sm-row">
+                                        <div class="wrap-count align-items-center d-flex">
+                                            <button class="count-minus-js">
+                                                <span class="count-minus">
+                                                    <span></span>
+                                                </span>
+                                            </button>
+
+                                            <input type="text" class="count-number" value="1">
+                                            <button class="count-minus-plus">
+
+                                                <span class="count-plus">
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <!--/wrap-count-->
+                                        <div class="price d-flex align-items-center">1 044 грн</div>
+                                        <button type="button" class="wrap-close-icon p-0 ml-auto d-none d-lg-block">
+                                            <span class="close-icon">
+                                                <span></span>
+                                                <span></span>
+                                            </span>
+                                            <span class="return-btn">Вернуть</span>
+                                        </button>
+                                    </div>
+                                    <!--/wrap-count-price-->
+                                </div>
+                                <!--/col-lg-7-->
+                            </div>
+                            <!--/row-->
+                        </div>
+                        <!--ORDERING ITEM START-->
+
+                        <!--ORDERING ITEM START-->
+                        <div class="ordering-item deleted">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="wrap-img-desc d-flex justify-content-between mb-5 mb-sm-0">
+                                        <div class="d-flex justify-content-lg-start justify-content-between flex-column flex-sm-row">
+                                            <div class="content-img">
+                                                <img src="img/small-armchair.png" alt="">
+                                            </div>
+                                            <div class="content-desc d-flex flex-column justify-content-around ml-5 mt-5 mt-sm-0">
+                                                <div class="title title-middle bold">Большой босс</div>
+                                                <div class="desc">
+                                                    <div class="desc-name mb-2">
+                                                        <span>Ткань верха (основа)</span>
+                                                        <span>Oxford Электрик</span>
+                                                    </div>
+                                                    <!-- /desc-name -->
+                                                    <div class="desc-size">Размер: Средний (М)</div>
+                                                </div>
+                                            </div>
+                                            <!--/content-desc-->
+                                        </div>
+                                        <button type="button" class="wrap-close-icon d-lg-none">
+                                            <span class="close-icon">
+                                                <span></span>
+                                                <span></span>
+                                            </span>
+                                            <span class="return-btn">Вернуть</span>
+                                        </button>
+                                    </div>
+                                    <!--/wrap-img-desc-->
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="wrap-count-price custom-blue d-flex justify-content-between  align-items-center pl-lg-5 flex-column flex-sm-row">
+                                        <div class="wrap-count align-items-center d-flex">
+                                            <button class="count-minus-js">
+                                                <span class="count-minus">
+                                                    <span></span>
+                                                </span>
+                                            </button>
+
+                                            <input type="text" class="count-number" value="1">
+                                            <button class="count-minus-plus">
+
+                                                <span class="count-plus">
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <!--/wrap-count-->
+                                        <div class="price d-flex align-items-center">1 044 грн</div>
+                                        <button type="button" class="wrap-close-icon p-0 ml-auto d-none d-lg-block">
+                                            <span class="close-icon">
+                                                <span></span>
+                                                <span></span>
+                                            </span>
+                                            <span class="return-btn">Вернуть</span>
+                                        </button>
+                                    </div>
+                                    <!--/wrap-count-price-->
+                                </div>
+                                <!--/col-lg-7-->
+                            </div>
+                            <!--/row-->
+                        </div>
+                        <!--ORDERING ITEM START-->
+
+                    </div>
+                    <!-- /ordering-content -->
+
+                    <div class="ordering-footer mt-lg-5 mb-5 mb-lg-0">
+                        <div class="row">
+                            <div class="col-lg-5"></div>
+                            <div class="col-lg-7">
+                                <div class="ordering-footer-content d-flex justify-content-between flex-column flex-sm-row align-items-center">
+                                    <div class="total">
+                                        <div class="title title-middle">Сумма заказа</div>
+                                        <div class="title title-big">2 088 грн</div>
+                                    </div>
+                                    <div class="btn-wrap mt-5 mt-sm-0">
+                                        <button>
+                                            <span class="btn-label shadow-lg rounded">Оформить заказ</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ordering-footer-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Modal Contact Form-->
+<div class="modal fade bd-example-modal-lg" id="contactFormModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="ordering cart">
+                <div class="wraper-form-contact">
+                    <div class="input-group">
+                        <button type="button"  data-toggle="modal" data-target="#contactFormModal" class="cart-btn closes-btn">
+                            <span class="close-icon ml-auto d-block">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </button>
+                        <input type="tel" class="form-control" placeholder="+38(0" aria-label="Recipient's username">
+                        <input type="text" class="form-control" placeholder="Имя" aria-label="Recipient's username">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary actions-btn-js" type="button" >Заказать звонок</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="js/plugin.js"></script>
+
+<script>
+    getContact.formopen();
+    counter.start();
+    closeForm.onCloseForm();
+    openCloseForm.initial();
+    deletcard.init();
+</script>
+
+</body>
+</html>
